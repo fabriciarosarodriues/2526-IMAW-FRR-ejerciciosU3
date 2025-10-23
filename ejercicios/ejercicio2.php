@@ -199,52 +199,75 @@
       </nav>
     </header>
     <!-- Begin page content -->
-    <main class="flex-shrink-0">
-      <div class="container">
-		<section class="container">
-			<h2>2- Clases y Funciones</h2>
-			<article id="ejer2_1">
-				<h3>Ejercicio 2.1</h3>
-				<?php 
-						 require_once __DIR__ . '/../recursos/bombilla.php';
+<main class="flex-shrink-0">
+  <div class="container py-4">
+    <section class="container">
+      <h2 class="mb-4">2- Clases y Funciones</h2>
 
-                        $mibombilla = new Bombilla();
+      <!-- Ejercicio 2.1 -->
+      <article id="ejer2_1" class="card mb-4 shadow-sm bg-light rounded">
+        <div class="card-body">
+          <h3 class="card-title">Ejercicio 2.1</h3>
+          <?php 
+            require_once __DIR__ . '/../recursos/bombilla.php';
 
-                        $mibombilla->encender();
-                        $mibombilla->apagar();
+            $mibombilla = new Bombilla();
+            $mibombilla->encender();
+            $mibombilla->apagar();
+          ?>
+        </div>
+      </article>
 
-						?>
-			</article>
-			<article id="ejer2_2">
-				<h3>Ejercicio 2.2</h3>
-				<?php 
-						
-
+      <!-- Ejercicio 2.2 -->
+      <article id="ejer2_2" class="card mb-4 shadow-sm bg-light rounded">
+        <div class="card-body">
+          <h3 class="card-title">Ejercicio 2.2</h3>
+          <?php 
             require_once __DIR__ . '/../recursos/trigonometria.php';
               
-              $cateto1 = 10;
-              $cateto2 = 15;
+            $cateto1 = 10;
+            $cateto2 = 15;
 
-              $hipotenusa = calcularHipotenusa ($cateto1,$cateto2);
-              echo " Un triángulo rectángulo con catetos de " .$cateto1. " y " .$cateto2. ", tiene una hipotenusa de" .$hipotenusa. ".";
+            $hipotenusa = calcularHipotenusa($cateto1,$cateto2);
+            echo "<p class='card-text'>Un triángulo rectángulo con catetos de $cateto1 y $cateto2, tiene una hipotenusa de $hipotenusa.</p>";
+          ?>
+        </div>
+      </article>
 
-						?>
-			</article>
-			<article id="ejer2_3">
-				<h3>Ejercicio 2.3</h3>
-				<?php 
-						//TO-DO
-						?>
-			</article>
-			<article id="ejer2_4">
-				<h3>Ejercicio 2.4</h3>
-				<?php 
-						//TO-DO
-						?>
-			</article>
-		</section>
-	</div>
-    </main>
+      <!-- Ejercicio 2.3 -->
+      <article id="ejer2_3" class="card mb-4 shadow-sm bg-light rounded">
+        <div class="card-body">
+          <h3 class="card-title">Ejercicio 2.3</h3>
+          <?php 
+            require_once __DIR__ . "/../recursos/cubo.php";
+
+            $cubo = new Cubo(3);
+            $cubo->revolver();
+          ?>
+        </div>
+      </article>
+
+      <!-- Ejercicio 2.4 -->
+      <article id="ejer2_4" class="card mb-4 shadow-sm bg-light rounded">
+        <div class="card-body">
+          <h3 class="card-title">Ejercicio 2.4</h3>
+          <?php 
+            require_once __DIR__ . "/../recursos/pokemon.php";
+
+            #creamos nuevo pokemon
+            $pikachu = new Pokemon("Pikachu");
+
+            #llamada a la función herir
+            $pikachu->herir(3);
+            $pikachu->herir(4);
+          ?>
+        </div>
+      </article>
+
+    </section>
+  </div>
+</main>
+
     <footer class="footer mt-auto py-3 bg-body-tertiary">
       <div class="container">
         <span class="text-body-secondary"
