@@ -21,7 +21,15 @@ $nombre = "Raúl";
             object-fit: cover;
         }
     </style>
+
 </head>
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container">
+        <span class="text-body-secondary"
+          >IMAW - Ciudad Jardin</span
+        >
+      </div>
+    </footer>
 
 <body>
 
@@ -81,4 +89,5 @@ $nombre = "Raúl";
         </div>
     </div>
 </body>
+
 </html>
