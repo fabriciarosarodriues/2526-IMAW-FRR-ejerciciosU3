@@ -17,7 +17,7 @@
   <!-- Header -->
     <header class="bg-light text-center p-4">
         <div class="d-flex justify-content-center">
-            <img src="img/php_logo.png" alt="Imagen encabezado" class="img-fluid rounded shadow"
+            <img src="../img/php_logo.png" alt="Imagen encabezado" class="img-fluid rounded shadow"
                 style="max-height: 120px; width: auto;">
         </div>
     </header>
@@ -35,28 +35,28 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary me-2 text-white" href="ejercicio1.1.php">Variables</a>
+                        <a class="nav-link btn btn-primary me-2 text-white" href="../ejercicio1.1.php">Variables</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-secondary me-2 text-white" href="ejercicio1.2.php">Clases y Funciones</a>
+                        <a class="nav-link btn btn-secondary me-2 text-white" href="#">Clases y Funciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-success me-2 text-white" href="ejercicio1.3.php">Condiciones</a>
+                        <a class="nav-link btn btn-success me-2 text-white" href="../ejercicio1.3.php">Condiciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-warning me-2 text-white" href="ejercicio1.4.php">Bucles</a>
+                        <a class="nav-link btn btn-warning me-2 text-white" href="../ejercicio1.4.php">Bucles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-danger me-2 text-white" href="ejercicio1.5.php">Formularios</a>
+                        <a class="nav-link btn btn-danger me-2 text-white" href="../ejercicio1.5.php">Formularios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary me-2 text-white" href="ejercicio1.1.php">Sesiones</a>
+                        <a class="nav-link btn btn-primary me-2 text-white" href="../ejercicio1.1.php">Sesiones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-secondary me-2 text-white" href="ejercicio1.2.php">Cookies</a>
+                        <a class="nav-link btn btn-secondary me-2 text-white" href="../ejercicio1.2.php">Cookies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-success me-2 text-white" href="ejercicio1.3.php">Trabajo Final</a>
+                        <a class="nav-link btn btn-success me-2 text-white" href="/../ejercicio1.3.php">Trabajo Final</a>
                     </li>
                 </ul>
             </div>
@@ -158,46 +158,7 @@
         </li>
       </ul>
     </div>
-    <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="..">Urtzi Diaz Arberas</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" href="ejercicio1.php">ACT1 - Variables</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="ejercicio2.php">ACT2 - Funciones y Clases</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
+    
     <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container py-4">
