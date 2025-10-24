@@ -140,6 +140,7 @@ $mes = [
 
 $mes = 4
 ?>
+
  <div class="container my-5">
         <div class="card shadow-sm p-4">
             <h1 class="card-title text-warning"><strong>Ejercicio 1.3</strong></h1>
@@ -170,6 +171,7 @@ function aleatorio() {
 }
 
 ?>
+
 <div class="container my-5">
 
     <<!--cada vez que se cargue la página saldrá un coche diferente-->
@@ -190,8 +192,9 @@ $paisajes = [
     "Imagen_otra_4.jpg",
     "Imagen_otra_2.jpg"
 ];
+
 // Crea funcion aleatoria
-function aleatorio() {
+function aleatorio1() {
 
     $imagen = rand(0,3);
     
@@ -205,8 +208,8 @@ function aleatorio() {
         <div class="card shadow-sm p-4">
             <h1 class="card-title text-secondary"><strong>Ejercicio 1.5</strong></h1>
             <div class="card-body mt-3 text-center">
-                <img src="img/<?php echo $paisajes[aleatorio()]; ?>" 
-                    alt="<?php echo $paisajes[aleatorio()]; ?>" 
+                <img src="../img/<?php echo $paisajes[aleatorio1()]; ?>" 
+                    alt="<?php echo $paisajes[aleatorio1()]; ?>" 
                     class="img-fluid rounded shadow-sm">
             </div>
         </div>
