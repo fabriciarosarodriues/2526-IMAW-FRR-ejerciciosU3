@@ -1,10 +1,4 @@
-<?php
-// Ejercicio 1.2
 
-// Crear variable a y b
-$a = 8;
-$b = 3;
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -81,20 +75,7 @@ $b = 3;
             </div>
         </div>
     </nav>
-    <div class="container my-5">
-        <div class="card shadow-sm p-4">
-            <h1 class="card-title text-success"><strong>Ejercicio 1.2</strong></h1>
-            <div class="card-body mt-3">
-    <!--resultado de operaciones en PHP-->
-                <p class="card-text">a = <?php echo $a; ?></p>
-                <p class="card-text">b = <?php echo $b; ?></p>
-                <p class="card-text">a + b = <?php echo $a + $b; ?></p>
-                <p class="card-text">a - b = <?php echo $a - $b; ?></p>
-                <p class="card-text">a / b = <?php echo $a / $b; ?></p>
-                <p class="card-text">El resto de dividir a entre b es <?php echo $a % $b; ?></p>
-            </div>
-        </div>
-    </div>
+    
 
 </body>
 </html>
