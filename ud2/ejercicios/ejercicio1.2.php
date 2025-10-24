@@ -1,9 +1,4 @@
-<?php
-// Ejercicio 1.1
 
-// Crear una variable con tu nombre
-$nombre = "Raúl";
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +6,7 @@ $nombre = "Raúl";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 2</title>
     <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -21,7 +16,6 @@ $nombre = "Raúl";
             object-fit: cover;
         }
     </style>
-
 </head>
 <footer class="footer mt-auto py-3 bg-body-tertiary">
       <div class="container">
@@ -81,34 +75,7 @@ $nombre = "Raúl";
             </div>
         </div>
     </nav>
-    <div class="container my-5">
-        <div class="card shadow-sm p-4">
-            <h3 class="card-title text-primary"><strong>1-Tipos de variables</strong></h3>
-            <p class="card-subtitle mb-2 text-success"><b>Ejercicio 1.1</b></p>
-            <p class="card-text">Hola <strong><?php echo $nombre; ?></strong>, Bienvenido</p>
-        </div>
-    </div>
-    <?php
-// Ejercicio 1.2
+    
 
-// Crear variable a y b
-$a = 8;
-$b = 3;
-?>
-    <div class="container my-5">
-        <div class="card shadow-sm p-4">
-            <h1 class="card-title text-success"><strong>Ejercicio 1.2</strong></h1>
-            <div class="card-body mt-3">
-    <!--resultado de operaciones en PHP-->
-                <p class="card-text">a = <?php echo $a; ?></p>
-                <p class="card-text">b = <?php echo $b; ?></p>
-                <p class="card-text">a + b = <?php echo $a + $b; ?></p>
-                <p class="card-text">a - b = <?php echo $a - $b; ?></p>
-                <p class="card-text">a / b = <?php echo $a / $b; ?></p>
-                <p class="card-text">El resto de dividir a entre b es <?php echo $a % $b; ?></p>
-            </div>
-        </div>
-    </div>
 </body>
-
 </html>

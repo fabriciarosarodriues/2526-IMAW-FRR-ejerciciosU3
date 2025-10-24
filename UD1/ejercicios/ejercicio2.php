@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary me-2 text-white" href="../ejercicio1.1.php">Variables</a>
+                        <a class="nav-link btn btn-primary me-2 text-white" href="ejercicio1.php">Variables</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-secondary me-2 text-white" href="#">Clases y Funciones</a>
