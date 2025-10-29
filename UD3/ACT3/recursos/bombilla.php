@@ -21,14 +21,14 @@ class Bombilla {
     #void es un tipo que hace que 
     public function encender(): void {
         $this->encendida = true;
-        echo "<p>La bombilla está ahora encendida.</p>" .
-             "<p>\$this->encendida es " . ($this->encendida ? 'true' : 'false') . "</p>";
+        echo "<p>La bombilla está ahora encendida.</p>" ;#.
+            # "<p>\$this->encendida es " . ($this->encendida ? 'true' : 'false') . "</p>";
     }
     #función que apaga la bombilla
     public function apagar(): void {
         $this->encendida = false;
-        echo "<p>La bombilla está ahora apagada.</p>" .
-             "<p>\$this->encendida es " . ($this->encendida ? 'true' : 'false') . "</p>";
+        echo "<p>La bombilla está ahora apagada.</p>"; #.
+             #"<p>\$this->encendida es " . ($this->encendida ? 'true' : 'false') . "</p>";
     }
 }
 ?>

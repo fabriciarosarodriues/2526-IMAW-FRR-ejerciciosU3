@@ -14,7 +14,9 @@
         }
     </style>
 </head>
-  <!-- Header -->
+
+  <body class="d-flex flex-column h-100">
+      <!-- Header -->
     <header class="bg-light text-center p-4">
         <div class="d-flex justify-content-center">
             <img src="../img/php_logo.png" alt="Imagen encabezado" class="img-fluid rounded shadow"
@@ -41,28 +43,27 @@
                         <a class="nav-link btn btn-secondary me-2 text-white" href="#">Clases y Funciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-success me-2 text-white" href="../ejercicio1.3.php">Condiciones</a>
+                        <a class="nav-link btn btn-success me-2 text-white" href="ejercicio3.php">Condiciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-warning me-2 text-white" href="../ejercicio1.4.php">Bucles</a>
+                        <a class="nav-link btn btn-warning me-2 text-white" href="ejercicio4.php">Bucles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-danger me-2 text-white" href="../ejercicio1.5.php">Formularios</a>
+                        <a class="nav-link btn btn-danger me-2 text-white" href="ejercicio1.5.php">Formularios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary me-2 text-white" href="../ejercicio1.1.php">Sesiones</a>
+                        <a class="nav-link btn btn-primary me-2 text-white" href="ejercicio6.php">Sesiones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-secondary me-2 text-white" href="../ejercicio1.2.php">Cookies</a>
+                        <a class="nav-link btn btn-secondary me-2 text-white" href="ejercicio7.php">Cookies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-success me-2 text-white" href="/../ejercicio1.3.php">Trabajo Final</a>
+                        <a class="nav-link btn btn-success me-2 text-white" href="ejercicio1.3.php">Trabajo Final</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-  <body class="d-flex flex-column h-100">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -169,6 +170,33 @@
       <article id="ejer2_1" class="card mb-4 shadow-sm bg-light rounded">
         <div class="card-body">
           <h3 class="card-title">Ejercicio 2.1</h3>
+
+          <h5 class="fw-bold mb-3">Descripción:</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  💡 Crea una clase llamada <strong>Bombilla</strong>.
+                </li>
+                <li class="list-group-item">
+                  🔒 La clase tendrá una propiedad privada de tipo booleano llamada <strong>encendida</strong>.
+                </li>
+                <li class="list-group-item">
+                  ⚙️ El método constructor inicializará la propiedad <strong>encendida</strong> con el valor <strong>false</strong>.
+                </li>
+                <li class="list-group-item">
+                  🧰 La clase tendrá un método público <strong>getEncendida()</strong> para obtener el valor de la propiedad.
+                </li>
+                <li class="list-group-item">
+                  💡 También dispondrá de otros dos métodos públicos, <strong>encender()</strong> y <strong>apagar()</strong>, que cambiarán la propiedad <strong>encendida</strong> y mostrarán un mensaje indicando su estado:
+                  <div class="alert alert-warning mt-2 mb-0">
+                    <em>“La Bombilla está ahora encendida” y “La Bombilla está ahora apagada”</em>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  👤 Crea un objeto de la clase Bombilla y utiliza los métodos para encender y luego apagar la luz.
+                </li>
+                
+              </ul>
+              <br/>
           <?php 
             require_once __DIR__ . '/../recursos/bombilla.php';
 
@@ -183,6 +211,29 @@
       <article id="ejer2_2" class="card mb-4 shadow-sm bg-light rounded">
         <div class="card-body">
           <h3 class="card-title">Ejercicio 2.2</h3>
+
+           <h5 class="fw-bold mb-3">Descripción:</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  📁 Crea en la carpeta <strong>recursos</strong> un archivo llamado <strong>trigonometria.php</strong> e introduce en él una función llamada <strong>calculaHipotenusa</strong> que calcule la longitud de la hipotenusa a partir de los catetos.
+                </li>
+                <li class="list-group-item">
+                  📐 Busca la fórmula para el cálculo de la hipotenusa, que requiere realizar una <strong>raíz cuadrada</strong>.
+                </li>
+                <li class="list-group-item">
+                  🧮 Usa la función PHP adecuada para calcular la raíz cuadrada de un número (<code>sqrt()</code>).
+                </li>
+                <li class="list-group-item">
+                  🔢 Usa la función PHP para <strong>redondear</strong> el resultado a dos decimales (<code>round()</code>).
+                </li>
+                <li class="list-group-item">
+                  💻 En el archivo PHP que crearás en la carpeta <strong>ejercicios</strong> para resolver este ejercicio, crea dos variables <strong>$cateto1</strong> y <strong>$cateto2</strong> y asígnales valores concretos.
+                </li>
+                <li class="list-group-item">
+                  📊 Llamando a la función <strong>calculaHipotenusa</strong>, calcula la longitud de la hipotenusa y muestra el resultado.
+                </li>
+              </ul>
+              <br/>
           <?php 
             require_once __DIR__ . '/../recursos/trigonometria.php';
               
@@ -199,6 +250,32 @@
       <article id="ejer2_3" class="card mb-4 shadow-sm bg-light rounded">
         <div class="card-body">
           <h3 class="card-title">Ejercicio 2.3</h3>
+
+          <h5 class="fw-bold mb-3">Descripción:</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  📁 Crea en la carpeta <strong>recursos</strong> un archivo llamado <strong>cubo.php</strong> que contenga la clase <strong>Cubo</strong>.
+                </li>
+                <li class="list-group-item">
+                  🔒 La clase tendrá dos propiedades privadas: una booleana llamada <strong>resuelto</strong> y otra numérica llamada <strong>tamanio</strong>.
+                </li>
+                <li class="list-group-item">
+                  ⚙️ El método constructor inicializará <strong>resuelto</strong> con <strong>true</strong> y <strong>tamanio</strong> con el valor pasado como parámetro.
+                </li>
+                <li class="list-group-item">
+                  🧰 Crea un método público <strong>getResuelto()</strong> para obtener el valor de <strong>resuelto</strong> y otro método llamado <strong>revolver()</strong>.
+                </li>
+                <li class="list-group-item">
+                  🔄 El método <strong>revolver()</strong> cambiará <strong>resuelto</strong> a <strong>false</strong> y mostrará el mensaje:
+                  <div class="alert alert-secondary mt-2 mb-0">
+                    <em>“Ahora está todo revuelto”</em>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  👤 Todos los métodos de la clase deben ser públicos para poder ser usados desde un objeto.
+                </li>
+              </ul>
+              <br/>
           <?php 
             require_once __DIR__ . "/../recursos/cubo.php";
 
@@ -212,6 +289,32 @@
       <article id="ejer2_4" class="card mb-4 shadow-sm bg-light rounded">
         <div class="card-body">
           <h3 class="card-title">Ejercicio 2.4</h3>
+
+          <h5 class="fw-bold mb-3">Descripción:</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  📁 Crea en la carpeta <strong>recursos</strong> un archivo llamado <strong>pokemon.php</strong> que contenga la clase <strong>Pokemon</strong>.
+                </li>
+                <li class="list-group-item">
+                  🔒 La clase tendrá dos propiedades privadas: <strong>nombre</strong> y <strong>vida</strong>.
+                </li>
+                <li class="list-group-item">
+                  ⚙️ El método constructor inicializará <strong>nombre</strong> con el valor pasado como parámetro y <strong>vida</strong> con el valor 10.
+                </li>
+                <li class="list-group-item">
+                  🧰 Crea un método público <strong>getVida()</strong> para consultar la vida del Pokémon y otro método público <strong>herir($fuerza)</strong> que reducirá la vida en la cantidad pasada como parámetro.
+                </li>
+                <li class="list-group-item">
+                  🔴 En el método <strong>herir()</strong>, muestra un mensaje indicando el nuevo valor de la propiedad <strong>vida</strong> del Pokémon, junto con su nombre.
+                </li>
+                <li class="list-group-item">
+                  👤 Crea un objeto de la clase Pokemon y llama dos veces al método <strong>herir()</strong> con fuerza 3 y 4, respectivamente.
+                </li>
+                <li class="list-group-item">
+                  📝 Todos los métodos de la clase deben ser públicos para poder ser utilizados desde el objeto.
+                </li>
+              </ul>
+              <br/>
           <?php 
             require_once __DIR__ . "/../recursos/pokemon.php";
 
