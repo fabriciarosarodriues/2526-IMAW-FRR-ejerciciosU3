@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto con Bootstrap</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #miCarrusel img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-light text-center p-4">
+        <div class="d-flex justify-content-center">
+            <img src="img/php_logo.png" alt="Imagen encabezado" class="img-fluid rounded shadow"
+                style="max-height: 120px; width: auto;">
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary me-2 text-white" href="ejercicios/ejercicio1.php">Variables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary me-2 text-white" href="ejercicios/ejercicio2.php">Clases y Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success me-2 text-white" href="ejercicio1.3.php">Condiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning me-2 text-white" href="ejercicio1.4.php">Bucles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger me-2 text-white" href="ejercicio1.5.php">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary me-2 text-white" href="ejercicio1.1.php">Sesiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary me-2 text-white" href="ejercicio1.2.php">Cookies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success me-2 text-white" href="ejercicio1.3.php">Trabajo Final</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container my-5">
+        <h1 class="mb-4">Ejercicios de PHP</h1>
+
+        <!-- Ejercicio 1.1 -->
+        <div class="card mb-3">
+            <div class="card-header bg-primary text-white">Ejercicio 1.1</div>
+            <div class="card-body">
+                <p><strong>Descripción:</strong></p>
+                <ul>
+                    <li>Crea una variable donde almacenes tu nombre.</li>
+                    <li>Muestra la siguiente información:</li>
+                </ul>
+                <p>1-Tipos de variables<br>Hola Raúl, Bienvenido</p>
+                <p>Para mostrar el contenido de la tercera línea, debes concatenar el texto “Hola “, la variable
+                    donde has almacenado tu nombre y el texto “, Bienvenido”.</p>
+            </div>
+        </div>
+
+        <!-- Ejercicio 1.2 -->
+        <div class="card mb-3">
+            <div class="card-header bg-success text-white">Ejercicio 1.2</div>
+            <div class="card-body">
+                <p><strong>Descripción:</strong></p>
+                <ul>
+                    <li>Crea dos variables de nombre <code>a</code> y <code>b</code> que contengan números.</li>
+                    <li>Muestra el resultado de las operaciones suma, resta, multiplicación, división y resto.</li>
+                </ul>
+                <p>Resultado esperado cuando <code>a=8</code> y <code>b=3</code>:</p>
+                <pre>
+a = 8
+b = 3
+a + b = 11
+a - b = 5
+a * b = 24
+a / b = 2.6666666666667
+El resto de dividir a entre b es 2
+                </pre>
+            </div>
+        </div>
+
+        <!-- Ejercicio 1.3 -->
+        <div class="card mb-3">
+            <div class="card-header bg-warning text-dark">Ejercicio 1.3</div>
+            <div class="card-body">
+                <p><strong>Descripción:</strong></p>
+                <ul>
+                    <li>Crea una variable de tipo array con los 12 meses del año y llámale <code>meses</code>.</li>
+                    <li>Crea otra variable <code>mes</code> donde almacenes un número del 1 al 12.</li>
+                    <li>Muestra la información: <strong>El mes 4 es Abril.</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ejercicio 1.4 -->
+        <div class="card mb-3">
+            <div class="card-header bg-info text-white">Ejercicio 1.4 (opcional)</div>
+            <div class="card-body">
+                <p><strong>Descripción:</strong></p>
+                <ul>
+                    <li>Crea un array <code>coches</code> con las marcas: Renault, Seat, Audi y Mercedes.</li>
+                    <li>Crea una variable <code>bola</code> y asigna un valor aleatorio entre 0 y 3.</li>
+                    <li>Muestra el coche seleccionado aleatoriamente usando la combinación de <code>coches</code> y
+                        <code>bola</code>.</li>
+                </ul>
+                <p>Ejemplo: <strong>El coche que te ha tocado es un Audi, Felicidades!!!!</strong><br>
+                    Cada vez que recargues la página, la marca del coche puede variar.</p>
+            </div>
+        </div>
+
+        <!-- Ejercicio 1.5 -->
+        <div class="card mb-3">
+            <div class="card-header bg-secondary text-white">Ejercicio 1.5 (opcional)</div>
+            <div class="card-body">
+                <p><strong>Descripción:</strong></p>
+                <ul>
+                    <li>Crea un array <code>paisajes</code> con cuatro cadenas representando imágenes.</li>
+                    <li>Crea una variable <code>imagen</code> y asigna un valor aleatorio entre 0 y 3.</li>
+                    <li>Muestra la imagen correspondiente:</li>
+                </ul>
+                <img src="img/ejer_1_5.png" alt="paisaje" class="img-fluid mt-2">
+                <p class="mt-2">Cada vez que recargues la página, la imagen visualizada podría variar.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+      <div class="container">
+        <span class="text-body-secondary"
+          >IMAW - Ciudad Jardin</span
+        >
+      </div>
+    </footer>
+
+</html>
